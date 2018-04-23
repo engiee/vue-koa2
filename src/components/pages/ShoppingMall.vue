@@ -16,7 +16,6 @@
 
 <script>
 
-
   export default {
     data() {
       return {
@@ -38,7 +37,7 @@
     border-top:0;
     border-left:0;
     border-right:0;
-    border-bottom: 1px !important;
+    border-bottom: 1px solid !important;
     background-color: #e5017d;
     color:#fff;
   }
@@ -46,5 +45,4 @@
     padding-top: .2rem;
     padding-left: .3rem;
   }
-
 </style>
