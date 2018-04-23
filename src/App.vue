@@ -6,15 +6,7 @@
 
 <script>
 export default {
-  name: 'App',
-  mounted:function () {
-    //得到手机屏幕的宽度
-    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
-    //得到html的Dom元素
-    let htmlDom = document.getElementsByTagName('html')[0];
-    //设置根元素字体大小
-    htmlDom.style.fontSize= htmlWidth/20 + 'px';
-  }
+  name: 'App'
 }
 </script>
 
@@ -24,8 +16,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 
 html{

@@ -1,41 +1,50 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+  <div>
+    <!--search bar layout-->
+    <div class="search-bar">
+      <van-row gutter="5">
+        <van-col span="3"><img :src="locationIcon" width="80%" class="location-icon" /></van-col>
+        <van-col span="16">
+          <input type="text" class="search-input" placeholder="查找"/>
+        </van-col>
+        <van-col span="5"><van-button size="mini">查找</van-button></van-col>
 
+      </van-row>
+    </div>
   </div>
 </template>
 
 <script>
 
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'wangzhen·boke'
-    }
+
+  export default {
+    data() {
+      return {
+        locationIcon: require('../../assets/images/location.png')
+      }
+    },
   }
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.hello{
-  color:#ddd;
-  font-size:1rem;
-}
+  .search-bar{
+    height: 2.2rem;
+    background-color: #e5017d;
+    line-height:2.2rem;
+  }
+  .search-input{
+    width:100%;
+    height: 1.3rem;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom: 1px !important;
+    background-color: #e5017d;
+    color:#fff;
+  }
+  .location-icon{
+    padding-top: .2rem;
+    padding-left: .3rem;
+  }
+
 </style>
