@@ -1,4 +1,4 @@
-<template v-lazy="banner.imageUrl">
+<template>
   <div>
     <!--search bar layout-->
     <div class="search-bar">
