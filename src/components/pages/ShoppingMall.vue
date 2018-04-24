@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!--search bar layout-->
+    <!--搜索框布局-->
     <div class="search-bar">
       <van-row gutter="5">
         <van-col span="3">
@@ -14,7 +14,7 @@
         </van-col>
       </van-row>
     </div>
-    <!--swipwer area-->
+    <!--轮播图布局-->
     <div class="swiper-area">
       <van-swipe :autoplay="1000">
         <van-swipe-item v-for="(banner,index) in bannerPicArray" :key="index">

@@ -17,8 +17,4 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
-html{
-  /*font-size:16px;*/
-}
 </style>
