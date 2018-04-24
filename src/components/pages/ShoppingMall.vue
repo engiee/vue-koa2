@@ -1,4 +1,4 @@
-<template>
+<template v-lazy="banner.imageUrl">
   <div>
     <!--search bar layout-->
     <div class="search-bar">
@@ -11,6 +11,14 @@
 
       </van-row>
     </div>
+    <!--swipwer area-->
+    <div class="swiper-area">
+      <van-swipe :autoplay="1000">
+        <van-swipe-item v-for="(banner,index) in bannerPicArray" :key="index">
+          <img v-lazy="banner.imageUrl" width="100%"/>
+        </van-swipe-item>
+      </van-swipe>
+    </div>
   </div>
 </template>
 
@@ -19,7 +27,12 @@
   export default {
     data() {
       return {
-        locationIcon: require('../../assets/images/location.png')
+        locationIcon: require('../../assets/images/location.png'),
+        bannerPicArray:[
+          {imageUrl:'http://7xjyw1.com1.z0.glb.clouddn.com/simleVueDemoPic001.jpg'},
+          {imageUrl:'http://7xjyw1.com1.z0.glb.clouddn.com/simleVueDemoPic002.jpg'},
+          {imageUrl:'http://7xjyw1.com1.z0.glb.clouddn.com/simleVueDemoPic003.jpg'}
+        ]
       }
     },
   }
@@ -44,5 +57,9 @@
   .location-icon{
     padding-top: .2rem;
     padding-left: .3rem;
+  }
+  .swiper-area{
+    width:100%;
+    overflow: hidden;
   }
 </style>
