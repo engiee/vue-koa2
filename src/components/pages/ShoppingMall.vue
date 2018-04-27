@@ -41,7 +41,7 @@
     created(){
       console.log(111)
       axios({
-        url: 'https://easy-mock.com/mock/5ae276d58e8556663763477a/example/',
+        url: 'https://easy-mock.com/mock/5ae276d58e8556663763477a/vue-koa/',
         method: 'get',
       }).then(response => {
         console.log(response)
