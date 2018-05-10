@@ -188,38 +188,4 @@
     font-size: 12px;
     text-align: center;
   }
-  .floor-anomaly{
-    display: flex;
-    flex-direction:row;
-    background-color: #fff;
-    border-bottom:1px solid #ddd;
-  }
-  .floor-anomaly div{
-    width:10rem;
-
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
-  .floor-one{
-    border-right:1px solid #ddd;
-
-  }
-  .floor-two{
-    border-bottom:1px solid #ddd;
-  }
-  .floor-rule{
-   display: flex;
-   flex-direction: row;
-   flex-wrap:wrap;
-   background-color: #fff;
- }
-  .floor-rule div{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width:10rem;
-    border-bottom:1px solid #ddd;
-  }
-  .floor-rule div:nth-child(odd){
-    border-right: 1px solid #ddd;
-  }
 </style>
