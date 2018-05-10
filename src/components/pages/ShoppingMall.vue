@@ -57,24 +57,7 @@
         </swiper>
 
         <!--floor one area-->
-        <div class="floor">
-
-          <div class="floor-anomaly">
-            <div class="floor-one"><img :src="floor1_0.image" width="100%" /></div>
-            <div>
-              <div class="floor-two"><img :src="floor1_1.image" width="100%" /></div>
-              <div><img :src="floor1_2.image" width="100%" /></div>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="floor-rule">
-          <div v-for="(item ,index) in floor1.slice(3)" :key="index">
-            <img :src="item.image" width="100%"/>
-          </div>
-        </div>
+        <floorComponent :floorData="floor1"></floorComponent>
 
       </div>
     </div>
@@ -88,11 +71,13 @@
   import swiperDefault from '../swiper/swiperDefault'
 
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
+  import floorComponent from '../component/floorComponent'
   export default {
     components: {
       swiper,
       swiperSlide,
-      swiperDefault
+      swiperDefault,
+      floorComponent
     },
     data() {
       return {
