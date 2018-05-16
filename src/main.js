@@ -10,6 +10,9 @@ import { Button, Row, Col ,Search , Swipe , SwipeItem , Lazyload  } from 'vant'
 Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload)
 Vue.config.productionTip = false
 
+import { List } from 'vant'
+Vue.use(List)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
