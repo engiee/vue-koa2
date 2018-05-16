@@ -67,7 +67,7 @@
             <!--这里需要一个list组件-->
             <van-list>
               <van-row>
-                <van-col span="12" v-for="item in hotGoods">
+                <van-col span="12" v-for="item in hotGoods" :key="item.goodsId">
                   <div>{{item.name}}</div>
                 </van-col>
               </van-row>
