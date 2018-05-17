@@ -66,9 +66,9 @@
           <div class="hot-goods">
             <!--这里需要一个list组件-->
             <van-list>
-              <van-row>
-                <van-col span="12" v-for="item in hotGoods" :key="item.goodsId">
-                  <div>{{item.name}}</div>
+              <van-row gutter="20">
+                <van-col span="12" v-for="(item,index) in hotGoods" :key="index">
+                  <goods-info :goodsImage="item.image" :goodsName="item.name" :goodsPrice="item.price"></goods-info>
                 </van-col>
               </van-row>
             </van-list>
@@ -88,6 +88,7 @@
 
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
   import floorComponent from '../component/floorComponent'
+  import goodsInfo from '../component/goodsInfoComponent'
 
   import {toMoney} from '@/filter/moneyFilter.js'
   export default {
@@ -95,7 +96,8 @@
       swiper,
       swiperSlide,
       swiperDefault,
-      floorComponent
+      floorComponent,
+      goodsInfo
     },
     filters:{
       moneyFilter(money){
