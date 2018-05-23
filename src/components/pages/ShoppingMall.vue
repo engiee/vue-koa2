@@ -91,6 +91,8 @@
   import goodsInfo from '../component/goodsInfoComponent'
 
   import {toMoney} from '@/filter/moneyFilter.js'
+  import url from '@/serviceAPI.config.js'
+
   export default {
     components: {
       swiper,
@@ -139,7 +141,7 @@
     },
     created(){
       axios({
-        url: 'https://easy-mock.com/mock/5ae276d58e8556663763477a/vue-koa/',
+        url: url.getShoppingMallInfo,
         method: 'get',
       }).then(response => {
         console.log(response);
