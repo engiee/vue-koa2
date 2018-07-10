@@ -1,8 +1,8 @@
 {
-  "name": "vue-koa",
+  "name": "smilevue",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "wangzhen <wangzhen@yunjiacloud.com>",
+  "author": "jspang <web0432@126.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "mongoose": "^5.1.2",
+    "koa": "^2.5.1",
     "vant": "^1.0.7",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^3.1.3",

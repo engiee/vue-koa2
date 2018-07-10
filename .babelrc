@@ -8,8 +8,9 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-vue-jsx",
-    "transform-runtime",
-    ["import",{"libraryName":"vant","style":true}] //新增。说明：vant是支持babel-plugin-import引入的，它可以让我们按需引入组件模块，并且不用管理我们的样式，现在Vue项目组件库的主流引入方法。
-  ]
+  "plugins": [
+    "transform-vue-jsx",
+     "transform-runtime",
+     ["import",{"libraryName":"vant","style":true}]
+    ]
 }
